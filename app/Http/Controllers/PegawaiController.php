@@ -12,7 +12,11 @@ class PegawaiController extends Controller
      */
     public function index()
     {
-        //
+        //variable untuk menampung data
+        $pegawai = Pegawai::all(); //select * from pegawai
+
+        //passing data ke views
+        return view('pegawai.index', compact('pegawai'));
     }
 
     /**
