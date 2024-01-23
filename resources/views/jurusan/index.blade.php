@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">{{ __('Jurusan') }}</div>
+                <div class="card-header">,<h2>{{ __('Jurusan') }}</h2></div>
                 <div class="card-body">
                     <div class="table-responsive">
                         <table class="table table-bordered">

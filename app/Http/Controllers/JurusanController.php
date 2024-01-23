@@ -12,7 +12,9 @@ class JurusanController extends Controller
      */
     public function index()
     {
-        //
+        //panggil model jurusan
+        $jurusan = Jurusan::all(); // select * from jurusan
+        return view('jurusan.index', compact('jurusan'));
     }
 
     /**
