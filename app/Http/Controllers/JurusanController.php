@@ -2,21 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Pegawai;
+use App\Models\Jurusan;
 use Illuminate\Http\Request;
 
-class PegawaiController extends Controller
+class JurusanController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //variable untuk menampung data
-        $pegawai = Pegawai::all(); //select * from pegawai
-
-        //passing data ke views
-        return view('pegawai.index', compact('pegawai'));
+        //
     }
 
     /**
@@ -38,7 +34,7 @@ class PegawaiController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Pegawai $pegawai)
+    public function show(Jurusan $jurusan)
     {
         //
     }
@@ -46,7 +42,7 @@ class PegawaiController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Pegawai $pegawai)
+    public function edit(Jurusan $jurusan)
     {
         //
     }
@@ -54,7 +50,7 @@ class PegawaiController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Pegawai $pegawai)
+    public function update(Request $request, Jurusan $jurusan)
     {
         //
     }
@@ -62,7 +58,7 @@ class PegawaiController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Pegawai $pegawai)
+    public function destroy(Jurusan $jurusan)
     {
         //
     }
