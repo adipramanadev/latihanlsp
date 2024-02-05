@@ -12,7 +12,9 @@ class JurusanController extends Controller
      */
     public function index()
     {
-        //
+        //passing data jurusan to view
+        $jurusan = Jurusan::all();
+        return view("jurusan.index", compact("jurusan"));
     }
 
     /**
